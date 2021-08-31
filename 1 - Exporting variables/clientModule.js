@@ -1,1 +1,7 @@
 const moduleA = require('./moduleA')
+const moduleB = require('./moduleB')
+console.log(moduleA.hello)
+console.log(moduleA.wellcome)
+console.log(moduleA.noway)
+console.log(moduleB.hello)
+console.log(moduleB.sayGoodNight())
