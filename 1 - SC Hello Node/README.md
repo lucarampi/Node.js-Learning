@@ -34,6 +34,6 @@ Server is running! (port 8000)
 
 The web browser answer should be this:
 
-![Untitled](Hello%20Node%20js%20e3606d89ae124bd3813059e16f79ef53/Untitled.png)
+![Untitled](README/Untitled.png)
 
 To close your should open the Node server terminal and press *Ctrl + C*.
