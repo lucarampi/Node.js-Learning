@@ -36,4 +36,4 @@ The web browser answer should be this:
 
 ![Untitled](README/Untitled.png)
 
-To close your should open the Node server terminal and press *Ctrl + C*.
+To closeyour application you should open the Node server terminal and press *Ctrl + C*.
