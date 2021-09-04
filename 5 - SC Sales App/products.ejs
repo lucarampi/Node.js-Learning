@@ -41,23 +41,31 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <% items.forEach(element=> { %>
-                            <tr>
-                                <td>
-                                    <%= element.name %>
-                                </td>
-                                <td>
-                                    <%= element.price %>
-                                </td>
-                                <td>
-                                    <%= element.code %>
-                                </td>
-                                <td>
-                                    <a href="/delete/<%= element._id %>" class="btn btn-sm btn-danger">Delete</a>
-                                </td>
+                        <% if (items.length==0) { %>
+                            <div class="alert alert-warning"> Não existem dados cadastrados.</div>
 
-                            </tr>
-                            <% }) %>
+
+                            <% } else {%>
+                                <% items.forEach(element=> { %>
+                                    <tr>
+                                        <td>
+                                            <%= element.name %>
+                                        </td>
+                                        <td>
+                                            <%= element.price %>
+                                        </td>
+                                        <td>
+                                            <%= element.code %>
+                                        </td>
+                                        <td>
+                                            <a href="/delete/<%= element._id %>"
+                                                class="btn btn-sm btn-danger">Delete</a>
+                                        </td>
+
+                                    </tr>
+                                    <% }) %>
+
+                                        <% }%>
                     </tbody>
                 </table>
             </div>
@@ -76,7 +84,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    
+
 </body>
 
 </html>
